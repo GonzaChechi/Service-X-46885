@@ -141,43 +141,19 @@ header .navbar .navbar-brand span{
 }
 
 /* ------------------CARACTERISITCAS------------------- */
-.caract {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background: linear-gradient(to bottom right, rgb(245, 132, 26), white);
-}
 
 .caract h3 {
     display: flex;
     flex-basis: 100%;
     background-color: rgb(245, 132, 26);
     font-size: 50px;
-    margin-bottom: 30px;
     display: block;
     text-align: center;
 }
 
-.caract div {
-    width: 40%;
-    height: 150px;
-    margin: 10px;
-    border: 1px solid black;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.774);
-}
-
-.caract div:hover {
-    background-color: rgba(153, 75, 2, 0.973);
-}
-
-.caract div ul {
-    list-style: inside;
-}
-
-.caract div h4 {
-    margin-bottom: 10px;
-    text-align: center;
+.accordion .accordion-button{
+    background: linear-gradient(to bottom right, rgb(245, 132, 26), white);
+    margin: 0px;
 }
 
 /*!------------------FOOTER--------------------*/
@@ -417,35 +393,6 @@ footer div a img {
     }
 }
 
-@media screen and (max-width: 1000px)
-{
-    .caract div{
-        height: 200px;
-    } 
-}
-
-@media screen and (max-width: 785px){
-    .caract div{
-        height: 220px;
-    } 
-}
-
-@media screen and (max-width: 700px) {
-    .caract {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .caract div {
-        width: 50%;
-    }
-}
-
-@media screen and (max-width: 530px){
-    .caract div{
-        height: 280px;
-    } 
-}
 
 @media screen and (max-width: 450px) {
     .hero div h2 {
@@ -477,11 +424,6 @@ footer div a img {
     }
 }
 
-@media screen and (max-width: 400px) {
-    .caract div {
-        width: 60%;
-    }
-}
 
 /*!------------------FOOTER--------------------*/
 @media screen and (max-width: 550px) {
