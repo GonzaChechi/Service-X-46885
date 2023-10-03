@@ -256,60 +256,50 @@ footer div a img {
 /*!------------------PRECIOS--------------------*/
 
 
-
+.precios_planes .precios-flex{
+    display: flex;
+    width: 80%;
+    height: 90vh;
+    margin: 0 auto 50px;
+    justify-content: space-around;
+    
+}
 .precios_planes h2 {
-    display: block;
     text-align: center;
     font-size: 50px;
-    text-decoration: solid;
     text-decoration: underline;
+    margin: 30px 0px 50px 0px; 
 }
 
-.precios_planes .planes {
-    margin: 40px;
-    display: flex;
-    justify-content: space-evenly;
-}
 
-.precios_planes .planes div {
+.precios_planes .precios-flex div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     width: 40%;
-    height: 80vh;
     border-radius: 5px;
     background: linear-gradient(to bottom right, rgb(245, 132, 26), white);
     text-align: center;
+    padding: 20px;
 }
 
-.precios_planes .planes div h4 {
+.precios_planes  div h4 {
     font-size: 30px;
 }
 
-.precios_planes .planes div ul li {
-    list-style: none;
+.precios_planes  div ul li {
+    font-size: 16px;
     text-align: left;
-    margin: 5px 0px 5px 0px;
 }
 
-.precios_planes .planes div ul .precio_base {
-    margin-top: 100px;
-    margin-left: 0px;
+.precios_planes div h3 {
     text-align: center;
     font-size: 30px;
 }
 
-.precios_planes .planes div ul .precio_pro {
-    margin-top: 30px;
-    margin-left: 0px;
-    text-align: center;
-    font-size: 30px;
-}
-
-
-.precios_planes .planes div a {
-    width: 30%;
+.precios_planes div a {
+    width: 40%;
     color: white;
     text-decoration: none;
     padding: 5px;
@@ -317,7 +307,7 @@ footer div a img {
     background-color: rgb(245, 132, 26);
 }
 
-.precios_planes .planes div a:hover {
+.precios_planes div a:hover {
     color: rgba(153, 75, 2, 0.973);
 }
 
@@ -451,3 +441,41 @@ footer div a img {
         font-size: 15px;
     }
 }
+
+
+/*!------------------PRECIOS--------------------*/
+
+@media screen and (max-width: 930px){
+    .precios_planes .precios-flex{
+        width: 100%;     
+    }
+
+    .precios_planes h2 {
+        font-size: 40px;        
+    }
+}
+
+@media screen and (max-width: 750px){
+    .precios_planes .precios-flex{
+        flex-direction: column;
+        height: 200vh;
+        justify-content:space-around;
+        align-items: center;
+        
+    }
+
+    .precios_planes .precios-flex div {
+        width: 60%;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .precios_planes .precios-flex div {
+        width: 80%;
+    }
+}
+
+
+
+
