@@ -1,0 +1,50 @@
+.precios_planes {
+  h2 {
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
+    margin: 30px 0px 50px 0px;
+  }
+  .precios-flex {
+    display: flex;
+    width: 80%;
+    height: 90vh;
+    margin: 0 auto 50px;
+    justify-content: space-around;
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 40%;
+      border-radius: 5px;
+      background: linear-gradient(to bottom right, rgb(245, 132, 26), white);
+      text-align: center;
+      padding: 20px;
+      h3 {
+        font-size: 30px;
+      }
+      ul {
+        li {
+          font-size: 16px;
+          text-align: left;
+        }
+      }
+      h4 {
+        text-align: center;
+        font-size: 30px;
+      }
+      a {
+        width: 40%;
+        color: white;
+        text-decoration: none;
+        padding: 5px;
+        border-radius: 10px;
+        background-color: rgb(245, 132, 26);
+        &:hover {
+          color: rgba(153, 75, 2, 0.973);
+        }
+      }
+    }
+  }
+}

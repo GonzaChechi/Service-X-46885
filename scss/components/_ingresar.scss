@@ -1,0 +1,40 @@
+.ingresar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px auto;
+  width: 60%;
+  height: 60vh;
+  justify-content: space-between;
+  form {
+    width: 30%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    background: linear-gradient(to bottom right, rgb(245, 132, 26), white);
+    div {
+      input {
+        width: 100%;
+        height: 25px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 2px solid grey;
+      }
+    }
+    button {
+      margin-top: 50px;
+      width: 50%;
+      height: 25px;
+      border-radius: 5px;
+      border: 2px solid black;
+      &:hover {
+        background-color: rgba(153, 75, 2, 0.973);
+      }
+    }
+  }
+  .ing_reg {
+    text-align: center;
+  }
+}

@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap");
+/*!------------------RESET--------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Lora", serif; }
+
+/*!------------------BOOTSTRAP--------------------*/
+/*!------------------NAV--------------------*/
+header .navbar {
+  background-color: #f5841a;
+  position: sticky;
+  top: 0; }
+
+header .navbar .navbar-collapse {
+  justify-content: flex-end; }
+
+header .navbar .nav-link {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-right: 15px; }
+
+header .navbar .nav-link:hover {
+  color: rgba(153, 75, 2, 0.973); }
+
+header .navbar .navbar-brand {
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 300;
+  color: white;
+  padding: 0px; }
+
+header .navbar .navbar-brand span {
+  color: black; }
+
+/*!------------------CARACTERISTICAS--------------------*/
+.accordion .accordion-button {
+  background: linear-gradient(to bottom right, #f5841a, white);
+  margin: 0px; }
+
+main .hero {
+  width: 100%;
+  height: 80vh;
+  text-align: center;
+  background-image: url(../images/img_hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  main .hero div h2 {
+    color: black;
+    font-size: 40px;
+    font-weight: 400; }
+  main .hero div h3 {
+    margin-bottom: 50px;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.788); }
+  main .hero div a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    background-color: #f5841a;
+    padding: 10px;
+    border-radius: 10px; }
+    main .hero div a:hover {
+      background-color: rgba(153, 75, 2, 0.973); }
+
+main .video {
+  text-align: center; }
+  main .video h2 {
+    margin-bottom: 15px; }
+  main .video div {
+    display: grid;
+    width: 75%;
+    height: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 150px;
+    grid-template-areas: "imag1 imag1 imag1 " "imag3 video imag4 " "imag2 imag2 imag2 ";
+    gap: 5px;
+    margin: 30px auto; }
+    main .video div .ivideo {
+      grid-area: video;
+      height: 100%;
+      width: 100%;
+      box-shadow: 2px 1px 59px -16px rgba(0, 0, 0, 0.65);
+      -webkit-box-shadow: 2px 1px 59px -16px rgba(0, 0, 0, 0.65);
+      -moz-box-shadow: 2px 1px 59px -16px rgba(0, 0, 0, 0.65); }
+    main .video div img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      box-shadow: 2px 1px 59px -16px rgba(0, 0, 0, 0.65);
+      -webkit-box-shadow: 2px 1px 59px -16px rgba(0, 0, 0, 0.65);
+      -moz-box-shadow: 2px 1px 59px -16px rgba(0, 0, 0, 0.65); }
+    main .video div .img1 {
+      grid-area: imag1; }
+    main .video div .img2 {
+      grid-area: imag2; }
+    main .video div .img3 {
+      grid-area: imag3; }
+    main .video div .img4 {
+      grid-area: imag4; }
+
+main .caract h3 {
+  display: flex;
+  flex-basis: 100%;
+  background-color: #f5841a;
+  font-size: 50px;
+  display: block;
+  text-align: center; }
+
+footer {
+  background-color: #f5841a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  footer h2 {
+    font-size: 60px;
+    font-style: italic;
+    font-weight: 300;
+    color: white; }
+    footer h2 span {
+      color: black; }
+  footer div a img {
+    width: 50px;
+    height: 50px; }
+
+.ingresar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px auto;
+  width: 60%;
+  height: 60vh;
+  justify-content: space-between; }
+  .ingresar form {
+    width: 30%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    background: linear-gradient(to bottom right, #f5841a, white); }
+    .ingresar form div input {
+      width: 100%;
+      height: 25px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 2px solid grey; }
+    .ingresar form button {
+      margin-top: 50px;
+      width: 50%;
+      height: 25px;
+      border-radius: 5px;
+      border: 2px solid black; }
+      .ingresar form button:hover {
+        background-color: rgba(153, 75, 2, 0.973); }
+  .ingresar .ing_reg {
+    text-align: center; }
+
+.nosotros {
+  text-align: center; }
+  .nosotros img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 400px;
+    width: 700px; }
+  .nosotros p {
+    font-size: 20px;
+    margin-bottom: 20px; }
+
+.precios_planes h2 {
+  text-align: center;
+  font-size: 50px;
+  text-decoration: underline;
+  margin: 30px 0px 50px 0px; }
+
+.precios_planes .precios-flex {
+  display: flex;
+  width: 80%;
+  height: 90vh;
+  margin: 0 auto 50px;
+  justify-content: space-around; }
+  .precios_planes .precios-flex div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    border-radius: 5px;
+    background: linear-gradient(to bottom right, #f5841a, white);
+    text-align: center;
+    padding: 20px; }
+    .precios_planes .precios-flex div h3 {
+      font-size: 30px; }
+    .precios_planes .precios-flex div ul li {
+      font-size: 16px;
+      text-align: left; }
+    .precios_planes .precios-flex div h4 {
+      text-align: center;
+      font-size: 30px; }
+    .precios_planes .precios-flex div a {
+      width: 40%;
+      color: white;
+      text-decoration: none;
+      padding: 5px;
+      border-radius: 10px;
+      background-color: #f5841a; }
+      .precios_planes .precios-flex div a:hover {
+        color: rgba(153, 75, 2, 0.973); }
+
+.registro {
+  text-align: center;
+  margin: 10px; }
+  .registro section .formulario {
+    display: flex;
+    width: 20%;
+    height: 450px;
+    flex-direction: column;
+    margin: 30px auto;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: justify;
+    border-radius: 5px;
+    background: linear-gradient(to bottom right, #f5841a, white); }
+    .registro section .formulario input {
+      width: 100%;
+      height: 25px;
+      border-radius: 5px;
+      border: 2px solid grey; }
+    .registro section .formulario .numero_celular #codarea {
+      width: 25%; }
+    .registro section .formulario .numero_celular #numero {
+      width: 73%; }
+    .registro section .formulario .genero #gender {
+      width: 100%;
+      height: 25px;
+      border-radius: 5px;
+      border: 2px solid grey; }
+    .registro section .formulario button {
+      width: 50%;
+      height: 25px;
+      align-self: center;
+      border-radius: 5px;
+      border: 1px solid black; }
+      .registro section .formulario button:hover {
+        background-color: rgba(153, 75, 2, 0.973); }

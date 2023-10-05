@@ -1,0 +1,101 @@
+main {
+  .hero {
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+    background-image: url(../images/img_hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div {
+      h2 {
+        color: rgb(0, 0, 0);
+        font-size: 40px;
+        font-weight: 400;
+      }
+      h3 {
+        margin-bottom: 50px;
+        font-size: 30px;
+        color: rgba(0, 0, 0, 0.788);
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        text-align: center;
+        background-color: rgb(245, 132, 26);
+        padding: 10px;
+        border-radius: 10px;
+        &:hover {
+          background-color: rgba(153, 75, 2, 0.973);
+        }
+      }
+    }
+  }
+
+  .video {
+    text-align: center;
+    h2 {
+      margin-bottom: 15px;
+    }
+    div {
+      display: grid;
+      width: 75%;
+      height: 100%;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 150px;
+      grid-template-areas:
+        "imag1 imag1 imag1 "
+        "imag3 video imag4 "
+        "imag2 imag2 imag2 ";
+      gap: 5px;
+      margin: 30px auto;
+      .ivideo {
+        grid-area: video;
+        height: 100%;
+        width: 100%;
+        box-shadow: 2px 1px 59px -16px rgba(0, 0, 0, 0.65);
+        -webkit-box-shadow: 2px 1px 59px -16px rgba(0, 0, 0, 0.65);
+        -moz-box-shadow: 2px 1px 59px -16px rgba(0, 0, 0, 0.65);
+      }
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        box-shadow: 2px 1px 59px -16px rgba(0, 0, 0, 0.65);
+        -webkit-box-shadow: 2px 1px 59px -16px rgba(0, 0, 0, 0.65);
+        -moz-box-shadow: 2px 1px 59px -16px rgba(0, 0, 0, 0.65);
+      }
+      .img1 {
+        grid-area: imag1;
+      }
+
+      .img2 {
+        grid-area: imag2;
+      }
+
+      .img3 {
+        grid-area: imag3;
+      }
+
+      .img4 {
+        grid-area: imag4;
+      }
+    }
+  }
+
+  .caract {
+    h3 {
+      display: flex;
+      flex-basis: 100%;
+      background-color: rgb(245, 132, 26);
+      font-size: 50px;
+      display: block;
+      text-align: center;
+    }
+  }
+}

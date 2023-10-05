@@ -140,6 +140,10 @@ header .navbar .navbar-brand span{
     grid-area: imag3;
 }
 
+.video div .img4{
+    grid-area: imag4;
+}
+
 /* ------------------CARACTERISITCAS------------------- */
 
 .caract h3 {
@@ -284,7 +288,7 @@ footer div a img {
     padding: 20px;
 }
 
-.precios_planes  div h4 {
+.precios_planes  div h3 {
     font-size: 30px;
 }
 
@@ -293,7 +297,7 @@ footer div a img {
     text-align: left;
 }
 
-.precios_planes div h3 {
+.precios_planes div h4 {
     text-align: center;
     font-size: 30px;
 }
