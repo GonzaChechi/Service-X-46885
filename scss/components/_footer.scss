@@ -1,5 +1,5 @@
 footer {
-  background-color: rgb(245, 132, 26);
+  background-color: $color-principal;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -7,9 +7,9 @@ footer {
     font-size: 60px;
     font-style: italic;
     font-weight: 300;
-    color: white;
+    color: $color-secundario;
     span {
-      color: black;
+      color: $color-terciario;
     }
   }
   div {

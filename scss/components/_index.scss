@@ -13,7 +13,7 @@ main {
     align-items: center;
     div {
       h2 {
-        color: rgb(0, 0, 0);
+        color: $color-terciario;
         font-size: 40px;
         font-weight: 400;
       }
@@ -24,14 +24,14 @@ main {
       }
       a {
         text-decoration: none;
-        color: black;
+        color: $color-terciario;
         font-size: 20px;
         text-align: center;
-        background-color: rgb(245, 132, 26);
+        background-color: $color-principal;
         padding: 10px;
         border-radius: 10px;
         &:hover {
-          background-color: rgba(153, 75, 2, 0.973);
+          background-color: $color-cuarto;
         }
       }
     }
@@ -92,7 +92,7 @@ main {
     h3 {
       display: flex;
       flex-basis: 100%;
-      background-color: rgb(245, 132, 26);
+      background-color: $color-principal;
       font-size: 50px;
       display: block;
       text-align: center;

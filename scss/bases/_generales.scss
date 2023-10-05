@@ -14,7 +14,7 @@ body {
 /*!------------------BOOTSTRAP--------------------*/
 /*!------------------NAV--------------------*/
 header .navbar {
-  background-color: rgb(245, 132, 26);
+  background-color:$color-principal;
   position: sticky;
   top: 0;
 }
@@ -24,31 +24,31 @@ header .navbar .navbar-collapse {
 }
 
 header .navbar .nav-link {
-  color: white;
+  color: $color-secundario;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   margin-right: 15px;
 }
 
 header .navbar .nav-link:hover {
-  color: rgba(153, 75, 2, 0.973);
+  color:$color-cuarto;
 }
 
 header .navbar .navbar-brand {
   font-size: 40px;
   font-style: italic;
   font-weight: 300;
-  color: white;
+  color:$color-secundario;
   padding: 0px;
 }
 
 header .navbar .navbar-brand span {
-  color: black;
+  color: $color-terciario;
 }
 
 /*!------------------CARACTERISTICAS--------------------*/
 
 .accordion .accordion-button {
-  background: linear-gradient(to bottom right, rgb(245, 132, 26), white);
+  background: $color-gradiente;
   margin: 0px;
 }

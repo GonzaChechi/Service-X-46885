@@ -254,3 +254,68 @@ footer {
       border: 1px solid black; }
       .registro section .formulario button:hover {
         background-color: rgba(153, 75, 2, 0.973); }
+
+/*------------------RESPONSIVE--------------------*/
+/*!------------------MAIN--------------------*/
+@media screen and (max-width: 900px) {
+  .ppal .video div {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "imag1 imag1 " "video video " "imag3 imag4 " "imag2 imag2"; }
+  .ppal .video div img {
+    object-fit: fill; }
+  .ppal .video div .ivideo {
+    width: 100%; } }
+
+@media screen and (max-width: 450px) {
+  .ppal .hero div h2 {
+    font-size: 30px; }
+  .ppal .hero div h3 {
+    font-size: 20px; }
+  .ppal .video div {
+    grid-template-columns: 1fr;
+    grid-template-areas: "imag1 " "video " "imag3 " "imag4 " "imag2 "; }
+  .ppal .video div .ivideo {
+    grid-column: span 1;
+    grid-row: span 1; }
+  .ppal .video img {
+    grid-column: span 1;
+    grid-row: span 1; } }
+
+/*!------------------FOOTER--------------------*/
+@media screen and (max-width: 550px) {
+  footer {
+    flex-direction: column; } }
+
+/*!------------------NOSOTROS--------------------*/
+@media screen and (max-width: 700px) {
+  .nosotros img {
+    height: 200px;
+    width: 350px; } }
+
+@media screen and (max-width: 550px) {
+  .nosotros img {
+    height: 120px;
+    width: 210px; }
+  .nosotros p {
+    font-size: 15px; } }
+
+/*!------------------PRECIOS--------------------*/
+@media screen and (max-width: 930px) {
+  .precios_planes .precios-flex {
+    width: 100%; }
+  .precios_planes h2 {
+    font-size: 40px; } }
+
+@media screen and (max-width: 750px) {
+  .precios_planes .precios-flex {
+    flex-direction: column;
+    height: 200vh;
+    justify-content: space-around;
+    align-items: center; }
+  .precios_planes .precios-flex div {
+    width: 60%;
+    padding: 15px; } }
+
+@media screen and (max-width: 480px) {
+  .precios_planes .precios-flex div {
+    width: 80%; } }

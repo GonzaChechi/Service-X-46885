@@ -18,7 +18,7 @@
       align-items: center;
       width: 40%;
       border-radius: 5px;
-      background: linear-gradient(to bottom right, rgb(245, 132, 26), white);
+      background: $color-gradiente;
       text-align: center;
       padding: 20px;
       h3 {
@@ -36,13 +36,13 @@
       }
       a {
         width: 40%;
-        color: white;
+        color: $color-secundario;
         text-decoration: none;
         padding: 5px;
         border-radius: 10px;
-        background-color: rgb(245, 132, 26);
+        background-color: $color-principal;
         &:hover {
-          color: rgba(153, 75, 2, 0.973);
+          color: $color-cuarto;
         }
       }
     }
