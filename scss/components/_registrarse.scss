@@ -14,18 +14,25 @@
       text-align: justify;
       border-radius: 5px;
       background: $color-gradiente;
-      input {
-        width: 100%;
-        height: 25px;
-        border-radius: 5px;
-        border: 2px solid grey;
+      div {
+        display: flex;
+        flex-direction: column;
+        input {
+          width: 100%;
+          height: 25px;
+          border-radius: 5px;
+          border: 2px solid grey;
+        }
       }
       .numero_celular {
+        .tel-input {
+          flex-direction: row;
+        }
         #codarea {
           width: 25%;
         }
         #numero {
-          width: 73%;
+          width: calc(100%-25%);
         }
       }
 

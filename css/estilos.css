@@ -42,9 +42,9 @@ header .navbar .navbar-brand span {
   background: linear-gradient(to bottom right, #f5841a, white);
   margin: 0px; }
 
-main .hero {
+.ppal .hero {
   width: 100%;
-  height: 80vh;
+  height: calc(100vh - 76px);
   text-align: center;
   background-image: url(../images/img_hero.jpg);
   background-size: cover;
@@ -54,15 +54,15 @@ main .hero {
   display: flex;
   justify-content: center;
   align-items: center; }
-  main .hero div h2 {
+  .ppal .hero div h2 {
     color: black;
     font-size: 40px;
     font-weight: 400; }
-  main .hero div h3 {
+  .ppal .hero div h3 {
     margin-bottom: 50px;
     font-size: 30px;
     color: rgba(0, 0, 0, 0.788); }
-  main .hero div a {
+  .ppal .hero div a {
     text-decoration: none;
     color: black;
     font-size: 20px;
@@ -70,14 +70,14 @@ main .hero {
     background-color: #f5841a;
     padding: 10px;
     border-radius: 10px; }
-    main .hero div a:hover {
+    .ppal .hero div a:hover {
       background-color: rgba(153, 75, 2, 0.973); }
 
-main .video {
+.ppal .video {
   text-align: center; }
-  main .video h2 {
+  .ppal .video h2 {
     margin-bottom: 15px; }
-  main .video div {
+  .ppal .video div {
     display: grid;
     width: 75%;
     height: 100%;
@@ -86,30 +86,30 @@ main .video {
     grid-template-areas: "imag1 imag1 imag1 " "imag3 video imag4 " "imag2 imag2 imag2 ";
     gap: 5px;
     margin: 30px auto; }
-    main .video div .ivideo {
+    .ppal .video div .ivideo {
       grid-area: video;
       height: 100%;
       width: 100%;
       box-shadow: 2px 1px 59px -16px rgba(0, 0, 0, 0.65);
       -webkit-box-shadow: 2px 1px 59px -16px rgba(0, 0, 0, 0.65);
       -moz-box-shadow: 2px 1px 59px -16px rgba(0, 0, 0, 0.65); }
-    main .video div img {
+    .ppal .video div img {
       height: 100%;
       width: 100%;
       object-fit: cover;
       box-shadow: 2px 1px 59px -16px rgba(0, 0, 0, 0.65);
       -webkit-box-shadow: 2px 1px 59px -16px rgba(0, 0, 0, 0.65);
       -moz-box-shadow: 2px 1px 59px -16px rgba(0, 0, 0, 0.65); }
-    main .video div .img1 {
+    .ppal .video div .img1 {
       grid-area: imag1; }
-    main .video div .img2 {
+    .ppal .video div .img2 {
       grid-area: imag2; }
-    main .video div .img3 {
+    .ppal .video div .img3 {
       grid-area: imag3; }
-    main .video div .img4 {
+    .ppal .video div .img4 {
       grid-area: imag4; }
 
-main .caract h3 {
+.ppal .caract h3 {
   display: flex;
   flex-basis: 100%;
   background-color: #f5841a;
@@ -140,23 +140,28 @@ footer {
   margin: 30px auto;
   width: 60%;
   height: 60vh;
-  justify-content: space-between; }
+  justify-content: space-around; }
   .ingresar form {
-    width: 30%;
-    height: 50%;
+    width: 40%;
+    height: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     border-radius: 5px;
     background: linear-gradient(to bottom right, #f5841a, white); }
-    .ingresar form div input {
-      width: 100%;
-      height: 25px;
-      padding: 10px;
-      border-radius: 5px;
-      border: 2px solid grey; }
+    .ingresar form div {
+      display: flex;
+      flex-direction: column; }
+      .ingresar form div input {
+        width: 100%;
+        height: 25px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 2px solid grey;
+        margin: 5px; }
     .ingresar form button {
-      margin-top: 50px;
+      margin-top: 30px;
       width: 50%;
       height: 25px;
       border-radius: 5px;
@@ -232,15 +237,20 @@ footer {
     text-align: justify;
     border-radius: 5px;
     background: linear-gradient(to bottom right, #f5841a, white); }
-    .registro section .formulario input {
-      width: 100%;
-      height: 25px;
-      border-radius: 5px;
-      border: 2px solid grey; }
+    .registro section .formulario div {
+      display: flex;
+      flex-direction: column; }
+      .registro section .formulario div input {
+        width: 100%;
+        height: 25px;
+        border-radius: 5px;
+        border: 2px solid grey; }
+    .registro section .formulario .numero_celular .tel-input {
+      flex-direction: row; }
     .registro section .formulario .numero_celular #codarea {
       width: 25%; }
     .registro section .formulario .numero_celular #numero {
-      width: 73%; }
+      width: calc(100%-25%); }
     .registro section .formulario .genero #gender {
       width: 100%;
       height: 25px;
@@ -319,3 +329,53 @@ footer {
 @media screen and (max-width: 480px) {
   .precios_planes .precios-flex div {
     width: 80%; } }
+
+/*!------------------INGRESO--------------------*/
+@media screen and (max-width: 1020px) {
+  .ingresar form {
+    width: 50%; } }
+
+@media screen and (max-width: 800px) {
+  .ingresar form {
+    width: 60%; } }
+
+@media screen and (max-width: 680px) {
+  .ingresar form {
+    width: 70%; } }
+
+@media screen and (max-width: 580px) {
+  .ingresar form {
+    width: 80%; } }
+
+@media screen and (max-width: 490px) {
+  .ingresar form {
+    width: 100%; }
+    .ingresar form div input {
+      width: 90%; } }
+
+/*!------------------REGISTRO--------------------*/
+@media screen and (max-width: 1040px) {
+  .registro section .formulario {
+    width: 25%; } }
+
+@media screen and (max-width: 900px) {
+  .registro section .formulario {
+    width: 30%; } }
+
+@media screen and (max-width: 730px) {
+  .registro section .formulario {
+    width: 40%; } }
+
+@media screen and (max-width: 580px) {
+  .registro section .formulario {
+    width: 50%; } }
+
+@media screen and (max-width: 460px) {
+  .registro p {
+    font-size: 15px; }
+  .registro section .formulario {
+    width: 60%; } }
+
+@media screen and (max-width: 380px) {
+  .registro section .formulario {
+    width: 70%; } }

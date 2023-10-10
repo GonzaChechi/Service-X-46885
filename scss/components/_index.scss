@@ -1,7 +1,8 @@
-main {
-  .hero {
+.ppal {
+  // --------------------HERO--------------------------        
+    .hero {
     width: 100%;
-    height: 80vh;
+    height: calc(100vh - 76px);
     text-align: center;
     background-image: url(../images/img_hero.jpg);
     background-size: cover;
@@ -36,7 +37,7 @@ main {
       }
     }
   }
-
+// --------------------VIDEO--------------------------
   .video {
     text-align: center;
     h2 {
@@ -87,7 +88,7 @@ main {
       }
     }
   }
-
+// --------------------CARACTERISTICAS--------------------------
   .caract {
     h3 {
       display: flex;

@@ -112,3 +112,116 @@
         width: 80%;
     }
 }
+
+/*!------------------INGRESO--------------------*/
+
+@media screen and (max-width: 1020px){
+    .ingresar{
+        form{
+            width: 50%;
+        }
+    }
+}
+
+@media screen and (max-width: 800px){
+    .ingresar{
+        form{
+            width: 60%;
+        }
+    }
+}
+
+@media screen and (max-width: 680px){
+    .ingresar{
+        form{
+            width: 70%;
+        }
+    }
+}
+
+@media screen and (max-width: 580px){
+    .ingresar{
+        form{
+            width: 80%;
+        }
+    }
+}
+
+@media screen and (max-width: 490px){
+    .ingresar{
+        form{
+            width: 100%;
+            div{
+                input{
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
+
+/*!------------------REGISTRO--------------------*/
+@media screen and (max-width: 1040px){
+    .registro{
+        section{
+            .formulario{
+                width: 25%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px){
+    .registro{
+        section{
+            .formulario{
+                width: 30%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 730px){
+    .registro{
+        section{
+            .formulario{
+                width: 40%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 580px){
+    .registro{
+        section{
+            .formulario{
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 460px){
+    .registro{
+        p{
+            font-size: 15px;
+        }
+        section{
+            .formulario{
+                width: 60%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 380px){
+    .registro{
+        section{
+            .formulario{
+                width: 70%;
+            }
+        }
+    }
+}
+
+
