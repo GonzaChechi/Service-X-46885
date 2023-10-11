@@ -15,18 +15,18 @@
     div {
       h2 {
         color: $color-terciario;
-        font-size: 40px;
+        font-size: nth($font-size,3);
         font-weight: 400;
       }
       h3 {
         margin-bottom: 50px;
-        font-size: 30px;
+        font-size: nth($font-size,2);
         color: rgba(0, 0, 0, 0.788);
       }
       a {
         text-decoration: none;
         color: $color-terciario;
-        font-size: 20px;
+        font-size: nth($font-size,1 );
         text-align: center;
         background-color: $color-principal;
         padding: 10px;
@@ -94,7 +94,7 @@
       display: flex;
       flex-basis: 100%;
       background-color: $color-principal;
-      font-size: 50px;
+      font-size: nth($font-size,4 );
       display: block;
       text-align: center;
     }

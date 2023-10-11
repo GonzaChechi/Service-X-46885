@@ -36,11 +36,11 @@
       }
       a {
         width: 40%;
-        color: $color-secundario;
+        color: map-get($boton,color-texto);
         text-decoration: none;
         padding: 5px;
-        border-radius: 10px;
-        background-color: $color-principal;
+        border-radius: map-get($boton,radio-borde);
+        background-color: map-get($boton,fondo );
         &:hover {
           color: $color-cuarto;
         }
