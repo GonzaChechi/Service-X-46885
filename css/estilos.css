@@ -74,9 +74,13 @@ header .navbar .navbar-brand span {
     text-align: center;
     background-color: #f5841a;
     padding: 10px;
-    border-radius: 10px; }
+    border-radius: 10px;
+    transition: 1s; }
     .ppal .hero div a:hover {
-      background-color: rgba(153, 75, 2, 0.973); }
+      background-color: rgba(153, 75, 2, 0.973);
+      border-radius: 30px;
+      z-index: 2;
+      transform: rotateY(360deg); }
 
 .ppal .video {
   text-align: center; }
