@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap");
 
 /*!------------------RESET--------------------*/
 * {
@@ -8,13 +9,32 @@
 }
 
 body {
-  font-family: "Lora", serif;
+  font-family: "Inter", sans-serif;
+  h2 {
+    font-weight: nth($font-weight, 3);
+    font-size: nth($font-size, 3);
+    color: $color-terciario;
+  }
+  h3 {
+    font-weight: nth($font-weight, 2);
+    font-size: nth($font-size, 2);
+    color: $color-terciario;
+  }
+  h4 {
+    font-weight: nth($font-weight, 3);
+    font-size: nth($font-size, 2);
+  }
+  p {
+    font-weight: nth($font-weight, 1);
+    font-size: nth($font-size, 1);
+  }
 }
 
 /*!------------------BOOTSTRAP--------------------*/
 /*!------------------NAV--------------------*/
+
 header .navbar {
-  background-color:$color-principal;
+  background-color: $color-principal;
   position: sticky;
   top: 0;
 }
@@ -31,14 +51,15 @@ header .navbar .nav-link {
 }
 
 header .navbar .nav-link:hover {
-  color:$color-cuarto;
+  color: $color-cuarto;
 }
 
 header .navbar .navbar-brand {
+  font-family: "Inter", sans-serif;
   font-size: 40px;
   font-style: italic;
-  font-weight: 300;
-  color:$color-secundario;
+  font-weight: 400;
+  color: $color-secundario;
   padding: 0px;
 }
 

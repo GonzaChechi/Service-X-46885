@@ -1,7 +1,6 @@
 .precios_planes {
   h2 {
     text-align: center;
-    font-size: 50px;
     text-decoration: underline;
     margin: 30px 0px 50px 0px;
   }
@@ -11,6 +10,11 @@
     height: 90vh;
     margin: 0 auto 50px;
     justify-content: space-around;
+    .basico {
+      h4 {
+        margin-top: 80px;
+      }
+    }
     div {
       display: flex;
       flex-direction: column;
@@ -21,26 +25,19 @@
       background: $color-gradiente;
       text-align: center;
       padding: 20px;
-      h3 {
-        font-size: 30px;
-      }
       ul {
         li {
           font-size: 16px;
           text-align: left;
         }
       }
-      h4 {
-        text-align: center;
-        font-size: 30px;
-      }
       a {
         width: 40%;
-        color: map-get($boton,color-texto);
+        color: map-get($boton, color-texto);
         text-decoration: none;
         padding: 5px;
-        border-radius: map-get($boton,radio-borde);
-        background-color: map-get($boton,fondo );
+        border-radius: map-get($boton, radio-borde);
+        background-color: map-get($boton, fondo);
         transition: 1s;
         &:hover {
           transform: scale(1.2);
