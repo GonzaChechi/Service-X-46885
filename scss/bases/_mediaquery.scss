@@ -17,6 +17,7 @@
 
     .ppal .video div .ivideo {
         width: 100%;
+        transition: 0s;
         &:hover{
             transform: scale(1);}
     }
