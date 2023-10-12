@@ -4,7 +4,7 @@
     width: 100%;
     height: calc(100vh - 76px);
     text-align: center;
-    background-image: url(../images/img_hero.jpg);
+    background-image:  url(../images/img_hero.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -14,14 +14,13 @@
     align-items: center;
     div {git 
       h2 {
+        font-size: nth($font-size,4);
         color: $color-terciario;
-        font-size: nth($font-size,3);
-        font-weight: 400;
       }
       h3 {
         margin-bottom: 50px;
         font-size: nth($font-size,2);
-        color: rgb(0, 0, 0);
+        color: $color-terciario;
       }
       a {
         text-decoration: none;
@@ -35,8 +34,6 @@
         &:hover {
           background-color: $color-cuarto;
           border-radius: 30px;
-          z-index: 2;
-          transform:rotateY(360deg)
         }
       }
     }
