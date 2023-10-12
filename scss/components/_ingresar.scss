@@ -3,7 +3,7 @@
   margin: 30px auto;
   justify-content: space-around;
   width: 60%;
-  height: 60vh;  
+  height: 60vh;
   form {
     width: 40%;
     height: 60%;
@@ -24,13 +24,17 @@
       }
     }
     button {
+      background-color: $color-principal;
       margin-top: 30px;
       width: 50%;
       height: 25px;
       border-radius: 5px;
       border: 2px solid black;
+      transition: 1s;
       &:hover {
         background-color: $color-cuarto;
+        transform: scale(1.2);
+        border-radius: 30px;
       }
     }
   }

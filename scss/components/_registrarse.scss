@@ -43,13 +43,17 @@
         }
       }
       button {
+        background-color: $color-principal;
         width: 50%;
         height: 25px;
         align-self: center;
         border-radius: 5px;
         border: 1px solid black;
+        transition: 1s;
         &:hover {
           background-color: $color-cuarto;
+          transform: scale(1.2);
+          border-radius: 30px;
         }
       }
     }
