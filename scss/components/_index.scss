@@ -4,7 +4,7 @@
     width: 100%;
     height: calc(100vh - 76px);
     text-align: center;
-    background-image:  url(../images/img_hero.jpg);
+    background-image: url(../images/img_hero.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -12,9 +12,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    div {git 
+    div { 
       h2 {
-        font-size: nth($font-size,4);
+        font-size: nth($font-size,3);
         color: $color-terciario;
       }
       h3 {
