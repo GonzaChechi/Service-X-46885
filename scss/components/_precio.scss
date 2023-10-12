@@ -41,7 +41,9 @@
         padding: 5px;
         border-radius: map-get($boton,radio-borde);
         background-color: map-get($boton,fondo );
+        transition: 1s;
         &:hover {
+          transform: scale(1.2);
           color: $color-cuarto;
         }
       }
