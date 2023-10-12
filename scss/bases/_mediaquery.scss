@@ -20,7 +20,6 @@
     }
 }
 
-
 @media screen and (max-width: 450px) {
     .ppal .hero div h2 {
         font-size: 30px;
@@ -51,7 +50,6 @@
     }
 }
 
-
 /*!------------------FOOTER--------------------*/
 @media screen and (max-width: 550px) {
     footer {
@@ -79,26 +77,24 @@
     }
 }
 
-
 /*!------------------PRECIOS--------------------*/
 
-@media screen and (max-width: 930px){
-    .precios_planes .precios-flex{
-        width: 100%;     
+@media screen and (max-width: 930px) {
+    .precios_planes .precios-flex {
+        width: 100%;
     }
 
     .precios_planes h2 {
-        font-size: 40px;        
+        font-size: 40px;
     }
 }
 
-@media screen and (max-width: 750px){
-    .precios_planes .precios-flex{
+@media screen and (max-width: 750px) {
+    .precios_planes .precios-flex {
         flex-direction: column;
         height: 200vh;
-        justify-content:space-around;
+        justify-content: space-around;
         align-items: center;
-        
     }
 
     .precios_planes .precios-flex div {
@@ -107,7 +103,7 @@
     }
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px) {
     .precios_planes .precios-flex div {
         width: 80%;
     }
@@ -115,44 +111,49 @@
 
 /*!------------------INGRESO--------------------*/
 
-@media screen and (max-width: 1020px){
-    .ingresar{
-        form{
+@media screen and (max-width: 1035px) {
+    .ingresar {
+        form {
             width: 50%;
         }
     }
 }
 
-@media screen and (max-width: 800px){
-    .ingresar{
-        form{
+@media screen and (max-width: 900px) {
+    .ingresar {
+        form {
             width: 60%;
         }
     }
 }
 
-@media screen and (max-width: 680px){
-    .ingresar{
-        form{
+@media screen and (max-width: 750px) {
+    .ingresar {
+        form {
             width: 70%;
         }
     }
 }
 
-@media screen and (max-width: 580px){
-    .ingresar{
-        form{
+@media screen and (max-width: 640px) {
+    .ingresar {
+        form {
             width: 80%;
         }
     }
 }
 
-@media screen and (max-width: 490px){
-    .ingresar{
-        form{
+@media screen and (max-width: 560px) {
+    .ingresar {
+        h2 {
+            font-size: 30px;
+        }
+
+        form {
             width: 100%;
-            div{
-                input{
+
+            div {
+                input {
                     width: 90%;
                 }
             }
@@ -160,68 +161,75 @@
     }
 }
 
+@media screen and (max-width: 420px) {
+    .ingresar {
+        h2 {
+            font-size: 25px;
+        }
+    }
+}
+
 /*!------------------REGISTRO--------------------*/
-@media screen and (max-width: 1040px){
-    .registro{
-        section{
-            .formulario{
+@media screen and (max-width: 1040px) {
+    .registro {
+        section {
+            .formulario {
                 width: 25%;
             }
         }
     }
 }
 
-@media screen and (max-width: 900px){
-    .registro{
-        section{
-            .formulario{
+@media screen and (max-width: 900px) {
+    .registro {
+        section {
+            .formulario {
                 width: 30%;
             }
         }
     }
 }
 
-@media screen and (max-width: 730px){
-    .registro{
-        section{
-            .formulario{
+@media screen and (max-width: 730px) {
+    .registro {
+        section {
+            .formulario {
                 width: 40%;
             }
         }
     }
 }
 
-@media screen and (max-width: 580px){
-    .registro{
-        section{
-            .formulario{
+@media screen and (max-width: 580px) {
+    .registro {
+        section {
+            .formulario {
                 width: 50%;
             }
         }
     }
 }
 
-@media screen and (max-width: 460px){
-    .registro{
-        p{
+@media screen and (max-width: 460px) {
+    .registro {
+        p {
             font-size: 15px;
         }
-        section{
-            .formulario{
+
+        section {
+            .formulario {
                 width: 60%;
             }
         }
     }
 }
 
-@media screen and (max-width: 380px){
-    .registro{
-        section{
-            .formulario{
+@media screen and (max-width: 380px) {
+    .registro {
+        section {
+            .formulario {
                 width: 70%;
             }
         }
     }
 }
-
-
