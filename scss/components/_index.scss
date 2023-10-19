@@ -1,6 +1,6 @@
 .ppal {
-  // --------------------HERO--------------------------        
-    .hero {
+  // --------------------HERO--------------------------
+  .hero {
     width: 100%;
     height: calc(100vh - 76px);
     text-align: center;
@@ -12,7 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    div { 
+    div {
       h2 {
         color: $color-terciario;
       }
@@ -22,7 +22,7 @@
       a {
         text-decoration: none;
         color: $color-terciario;
-        font-size: nth($font-size,1 );
+        font-size: nth($font-size, 1);
         text-align: center;
         background-color: $color-principal;
         padding: 10px;
@@ -36,7 +36,7 @@
       }
     }
   }
-// --------------------VIDEO--------------------------
+  // --------------------VIDEO--------------------------
   .video {
     text-align: center;
     h3 {
@@ -62,7 +62,7 @@
         box-shadow: 2px 1px 59px -16px rgba(0, 0, 0, 0.65);
         -webkit-box-shadow: 2px 1px px -16px rgba(0, 0, 0, 0.65);
         transition-duration: 1s;
-        &:hover{
+        &:hover {
           transform: scale(2);
         }
       }
@@ -91,7 +91,8 @@
       }
     }
   }
-// --------------------CARACTERISTICAS--------------------------
+  // --------------------CARACTERISTICAS--------------------------
+
   .caract {
     h3 {
       display: flex;
@@ -99,6 +100,18 @@
       background-color: $color-principal;
       display: block;
       text-align: center;
+    }
+    .accordion {
+      .accordion-item {
+        h4 {
+          .accordion-button {
+            background: $color-gradiente;
+            margin: 0px;
+            font-weight: nth($font-weight, 3);
+            font-size: nth($font-size, 2);
+          }
+        }
+      }
     }
   }
 }
