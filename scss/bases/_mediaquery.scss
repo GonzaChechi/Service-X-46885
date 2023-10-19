@@ -2,6 +2,9 @@
 /*!------------------MAIN--------------------*/
 
 @media screen and (max-width: 900px) {
+    .ppal .hero div h1 {
+        font-size: 40px;
+    }
     .ppal .video div {
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
@@ -21,10 +24,11 @@
         &:hover{
             transform: scale(1);}
     }
+    
 }
 
 @media screen and (max-width: 450px) {
-    .ppal .hero div h2 {
+    .ppal .hero div h1 {
         font-size: 30px;
     }
 

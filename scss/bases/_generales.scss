@@ -10,6 +10,11 @@
 
 body {
   font-family: "Inter", sans-serif;
+  h1 {
+    font-weight: nth($font-weight,3);
+    font-size: nth($font-size, 4);
+    color: $color-terciario;
+  }
   h2 {
     font-weight: nth($font-weight, 3);
     font-size: nth($font-size, 3);

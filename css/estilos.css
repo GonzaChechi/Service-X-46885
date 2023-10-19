@@ -12,6 +12,10 @@
 
 body {
   font-family: "Inter", sans-serif; }
+  body h1 {
+    font-weight: 700;
+    font-size: 50px;
+    color: black; }
   body h2 {
     font-weight: 700;
     font-size: 40px;
@@ -295,6 +299,8 @@ footer {
 /*------------------RESPONSIVE--------------------*/
 /*!------------------MAIN--------------------*/
 @media screen and (max-width: 900px) {
+  .ppal .hero div h1 {
+    font-size: 40px; }
   .ppal .video div {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "imag1 imag1 " "video video " "imag3 imag4 " "imag2 imag2"; }
@@ -307,7 +313,7 @@ footer {
       transform: scale(1); } }
 
 @media screen and (max-width: 450px) {
-  .ppal .hero div h2 {
+  .ppal .hero div h1 {
     font-size: 30px; }
   .ppal .hero div h3 {
     font-size: 20px; }
