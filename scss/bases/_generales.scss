@@ -46,17 +46,6 @@ header {
     position: sticky;
     top: 0;
     .container-fluid {
-      .navbar-brand {
-        font-family: "Inter", sans-serif;
-        font-size: 40px;
-        font-style: italic;
-        font-weight: 400;
-        color: $color-secundario;
-        padding: 0px;
-        span {
-          color: $color-terciario;
-        }
-      }
       .navbar-collapse {
         justify-content: flex-end;
         .navbar-nav {
@@ -76,4 +65,3 @@ header {
     }
   }
 }
-

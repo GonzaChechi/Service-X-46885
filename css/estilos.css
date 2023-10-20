@@ -40,15 +40,6 @@ header .navbar {
   background-color: #f5841a;
   position: sticky;
   top: 0; }
-  header .navbar .container-fluid .navbar-brand {
-    font-family: "Inter", sans-serif;
-    font-size: 40px;
-    font-style: italic;
-    font-weight: 400;
-    color: white;
-    padding: 0px; }
-    header .navbar .container-fluid .navbar-brand span {
-      color: black; }
   header .navbar .container-fluid .navbar-collapse {
     justify-content: flex-end; }
     header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link {
@@ -127,6 +118,9 @@ header .navbar {
       grid-area: imag3; }
     .ppal .video div .img4 {
       grid-area: imag4; }
+  .ppal .video p {
+    text-align: justify;
+    transition: 3s; }
 
 .ppal .caract h3 {
   display: flex;
@@ -147,15 +141,6 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center; }
-  footer h2 {
-    font-family: "Inter", sans-serif;
-    font-size: 50px;
-    font-style: italic;
-    font-weight: 400;
-    color: white;
-    padding: 0px; }
-    footer h2 span {
-      color: black; }
   footer div a img {
     width: 50px;
     height: 50px; }
@@ -196,17 +181,19 @@ footer {
   .ingresar .ing_reg {
     text-align: center; }
 
-.nosotros {
+.nosotros div {
   text-align: center; }
-  .nosotros img {
+  .nosotros div img {
     margin-top: 20px;
     margin-bottom: 20px;
     height: 400px;
     width: 700px; }
-  .nosotros p {
-    margin-bottom: 20px; }
 
-.precios_planes h2 {
+.nosotros p {
+  text-align: justify;
+  margin-bottom: 20px; }
+
+.precios_planes h1 {
   text-align: center;
   text-decoration: underline;
   margin: 30px 0px 50px 0px; }
@@ -330,12 +317,16 @@ footer {
 
 /*!------------------NOSOTROS--------------------*/
 @media screen and (max-width: 700px) {
-  .nosotros img {
+  .nosotros div h1 {
+    font-size: 40px; }
+  .nosotros div img {
     height: 200px;
     width: 350px; } }
 
 @media screen and (max-width: 550px) {
-  .nosotros img {
+  .nosotros div h1 {
+    font-size: 30px; }
+  .nosotros div img {
     height: 120px;
     width: 210px; }
   .nosotros p {
@@ -345,7 +336,7 @@ footer {
 @media screen and (max-width: 930px) {
   .precios_planes .precios-flex {
     width: 100%; }
-  .precios_planes h2 {
+  .precios_planes h1 {
     font-size: 40px; } }
 
 @media screen and (max-width: 750px) {
@@ -359,6 +350,8 @@ footer {
     padding: 15px; } }
 
 @media screen and (max-width: 480px) {
+  .precios_planes h1 {
+    font-size: 30px; }
   .precios_planes .precios-flex div {
     width: 80%; } }
 
@@ -368,6 +361,8 @@ footer {
     width: 50%; } }
 
 @media screen and (max-width: 900px) {
+  .ingresar h1 {
+    font-size: 30px; }
   .ingresar form {
     width: 60%; } }
 
@@ -380,15 +375,13 @@ footer {
     width: 80%; } }
 
 @media screen and (max-width: 560px) {
-  .ingresar h2 {
-    font-size: 30px; }
   .ingresar form {
     width: 100%; }
     .ingresar form div input {
       width: 90%; } }
 
 @media screen and (max-width: 420px) {
-  .ingresar h2 {
+  .ingresar h1 {
     font-size: 25px; } }
 
 /*!------------------REGISTRO--------------------*/
@@ -405,12 +398,16 @@ footer {
     width: 40%; } }
 
 @media screen and (max-width: 580px) {
+  .registro h1 {
+    font-size: 40px; }
+  .registro p {
+    font-size: 15px; }
   .registro section .formulario {
     width: 50%; } }
 
 @media screen and (max-width: 460px) {
-  .registro p {
-    font-size: 15px; }
+  .registro h1 {
+    font-size: 30px; }
   .registro section .formulario {
     width: 60%; } }
 

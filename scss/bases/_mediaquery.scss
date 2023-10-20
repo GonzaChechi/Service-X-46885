@@ -67,14 +67,20 @@
 /*!------------------NOSOTROS--------------------*/
 
 @media screen and (max-width: 700px) {
-    .nosotros img {
+    .nosotros div h1{
+        font-size: 40px;
+    }    
+    .nosotros div img {
         height: 200px;
         width: 350px;
     }
 }
 
 @media screen and (max-width: 550px) {
-    .nosotros img {
+    .nosotros div h1{
+        font-size: 30px;
+    }    
+    .nosotros div img {
         height: 120px;
         width: 210px;
     }
@@ -91,7 +97,7 @@
         width: 100%;
     }
 
-    .precios_planes h2 {
+    .precios_planes h1 {
         font-size: 40px;
     }
 }
@@ -111,6 +117,11 @@
 }
 
 @media screen and (max-width: 480px) {
+    .precios_planes{
+        h1{
+            font-size: 30px;
+        }
+    }
     .precios_planes .precios-flex div {
         width: 80%;
     }
@@ -128,6 +139,9 @@
 
 @media screen and (max-width: 900px) {
     .ingresar {
+        h1 {
+            font-size: 30px;
+        }
         form {
             width: 60%;
         }
@@ -152,9 +166,6 @@
 
 @media screen and (max-width: 560px) {
     .ingresar {
-        h2 {
-            font-size: 30px;
-        }
 
         form {
             width: 100%;
@@ -170,7 +181,7 @@
 
 @media screen and (max-width: 420px) {
     .ingresar {
-        h2 {
+        h1 {
             font-size: 25px;
         }
     }
@@ -208,7 +219,14 @@
 }
 
 @media screen and (max-width: 580px) {
+    
     .registro {
+        h1{
+            font-size: 40px;
+        }
+        p{
+            font-size: 15px;
+        }
         section {
             .formulario {
                 width: 50%;
@@ -219,10 +237,9 @@
 
 @media screen and (max-width: 460px) {
     .registro {
-        p {
-            font-size: 15px;
+        h1{
+            font-size: 30px;
         }
-
         section {
             .formulario {
                 width: 60%;
