@@ -1,60 +1,94 @@
 /*------------------RESPONSIVE--------------------*/
-/*!------------------MAIN--------------------*/
+/*!------------------INDEX--------------------*/
 
 @media screen and (max-width: 900px) {
-    .ppal .hero div h1 {
-        font-size: 40px;
-    }
-    .ppal .video div {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas:
-            "imag1 imag1 "
-            "video video "
-            "imag3 imag4 "
-            "imag2 imag2";
-    }
+    .ppal {
+        .hero {
+            div {
+                h1 {
+                    font-size: 40px;
+                }
+            }
+        }
 
-    .ppal .video div img {
-        object-fit: fill;
-    }
+        .video {
+            div {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-areas:
+                    "imag1 imag1 "
+                    "video video "
+                    "imag3 imag4 "
+                    "imag2 imag2";
 
-    .ppal .video div .ivideo {
-        width: 100%;
-        transition: 0s;
-        &:hover{
-            transform: scale(1);}
+                .ivideo {
+                    width: 100%;
+                    transition: 0s;
+
+                    &:hover {
+                        transform: scale(1);
+                    }
+                }
+
+                img {
+                    object-fit: fill;
+                }
+            }
+            p{
+                font-size: 18px;
+            }
+        }
     }
-    
+}
+
+@media screen and (max-width: 580px){
+    .video{
+        p{
+            font-size: 15px;
+        }
+    }
 }
 
 @media screen and (max-width: 450px) {
-    .ppal .hero div h1 {
-        font-size: 30px;
+    .ppal {
+        .hero {
+            div {
+                h1 {
+                    font-size: 30px;
+                }
+
+                h3 {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .video {
+            div {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "imag1 "
+                    "video "
+                    "imag3 "
+                    "imag4 "
+                    "imag2 ";
+
+                .ivideo {
+                    grid-column: span 1;
+                    grid-row: span 1;
+                }
+
+                .img {
+                    grid-column: span 1;
+                    grid-row: span 1;
+                }
+            }
+            p{
+                font-size: 13px;
+            }
+
+        }
     }
 
-    .ppal .hero div h3 {
-        font-size: 20px;
-    }
-
-    .ppal .video div {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "imag1 "
-            "video "
-            "imag3 "
-            "imag4 "
-            "imag2 ";
-    }
-
-    .ppal .video div .ivideo {
-        grid-column: span 1;
-        grid-row: span 1;
-    }
-
-    .ppal .video img {
-        grid-column: span 1;
-        grid-row: span 1;
-    }
 }
 
 /*!------------------FOOTER--------------------*/
@@ -67,63 +101,80 @@
 /*!------------------NOSOTROS--------------------*/
 
 @media screen and (max-width: 700px) {
-    .nosotros div h1{
-        font-size: 40px;
-    }    
-    .nosotros div img {
-        height: 200px;
-        width: 350px;
+    .nosotros {
+        div {
+            h1 {
+                font-size: 40px;
+            }
+
+            img {
+                height: 200px;
+                width: 350px;
+            }
+        }
     }
 }
 
 @media screen and (max-width: 550px) {
-    .nosotros div h1{
-        font-size: 30px;
-    }    
-    .nosotros div img {
-        height: 120px;
-        width: 210px;
-    }
+    .nosotros {
+        div {
+            h1 {
+                font-size: 30px;
+            }
 
-    .nosotros p {
-        font-size: 15px;
+            img {
+                height: 120px;
+                width: 210px;
+            }
+        }
+
+        p {
+            font-size: 15px;
+        }
     }
 }
 
 /*!------------------PRECIOS--------------------*/
 
 @media screen and (max-width: 930px) {
-    .precios_planes .precios-flex {
-        width: 100%;
-    }
+    .precios_planes {
+        h1 {
+            font-size: 40px;
+        }
 
-    .precios_planes h1 {
-        font-size: 40px;
+        .precios-flex {
+            width: 100%;
+        }
     }
 }
 
 @media screen and (max-width: 750px) {
-    .precios_planes .precios-flex {
-        flex-direction: column;
-        height: 200vh;
-        justify-content: space-around;
-        align-items: center;
-    }
+    .precios_planes {
+        .precios-flex {
+            flex-direction: column;
+            height: 200vh;
+            justify-content: space-around;
+            align-items: center;
 
-    .precios_planes .precios-flex div {
-        width: 60%;
-        padding: 15px;
+            div {
+                width: 60%;
+                padding: 15px;
+            }
+        }
     }
 }
 
 @media screen and (max-width: 480px) {
-    .precios_planes{
-        h1{
+    .precios_planes {
+        h1 {
             font-size: 30px;
         }
-    }
-    .precios_planes .precios-flex div {
-        width: 80%;
+
+        .precios-flex {
+            div {
+                width: 80%;
+            }
+        }
     }
 }
 
@@ -142,6 +193,7 @@
         h1 {
             font-size: 30px;
         }
+
         form {
             width: 60%;
         }
@@ -219,14 +271,16 @@
 }
 
 @media screen and (max-width: 580px) {
-    
+
     .registro {
-        h1{
+        h1 {
             font-size: 40px;
         }
-        p{
+
+        p {
             font-size: 15px;
         }
+
         section {
             .formulario {
                 width: 50%;
@@ -237,9 +291,10 @@
 
 @media screen and (max-width: 460px) {
     .registro {
-        h1{
+        h1 {
             font-size: 30px;
         }
+
         section {
             .formulario {
                 width: 60%;

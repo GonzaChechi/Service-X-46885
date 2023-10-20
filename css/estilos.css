@@ -280,20 +280,26 @@ footer {
         border-radius: 30px; }
 
 /*------------------RESPONSIVE--------------------*/
-/*!------------------MAIN--------------------*/
+/*!------------------INDEX--------------------*/
 @media screen and (max-width: 900px) {
   .ppal .hero div h1 {
     font-size: 40px; }
   .ppal .video div {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "imag1 imag1 " "video video " "imag3 imag4 " "imag2 imag2"; }
-  .ppal .video div img {
-    object-fit: fill; }
-  .ppal .video div .ivideo {
-    width: 100%;
-    transition: 0s; }
-    .ppal .video div .ivideo:hover {
-      transform: scale(1); } }
+    .ppal .video div .ivideo {
+      width: 100%;
+      transition: 0s; }
+      .ppal .video div .ivideo:hover {
+        transform: scale(1); }
+    .ppal .video div img {
+      object-fit: fill; }
+  .ppal .video p {
+    font-size: 18px; } }
+
+@media screen and (max-width: 580px) {
+  .video p {
+    font-size: 15px; } }
 
 @media screen and (max-width: 450px) {
   .ppal .hero div h1 {
@@ -303,12 +309,14 @@ footer {
   .ppal .video div {
     grid-template-columns: 1fr;
     grid-template-areas: "imag1 " "video " "imag3 " "imag4 " "imag2 "; }
-  .ppal .video div .ivideo {
-    grid-column: span 1;
-    grid-row: span 1; }
-  .ppal .video img {
-    grid-column: span 1;
-    grid-row: span 1; } }
+    .ppal .video div .ivideo {
+      grid-column: span 1;
+      grid-row: span 1; }
+    .ppal .video div .img {
+      grid-column: span 1;
+      grid-row: span 1; }
+  .ppal .video p {
+    font-size: 13px; } }
 
 /*!------------------FOOTER--------------------*/
 @media screen and (max-width: 550px) {
@@ -334,10 +342,10 @@ footer {
 
 /*!------------------PRECIOS--------------------*/
 @media screen and (max-width: 930px) {
-  .precios_planes .precios-flex {
-    width: 100%; }
   .precios_planes h1 {
-    font-size: 40px; } }
+    font-size: 40px; }
+  .precios_planes .precios-flex {
+    width: 100%; } }
 
 @media screen and (max-width: 750px) {
   .precios_planes .precios-flex {
@@ -345,9 +353,9 @@ footer {
     height: 200vh;
     justify-content: space-around;
     align-items: center; }
-  .precios_planes .precios-flex div {
-    width: 60%;
-    padding: 15px; } }
+    .precios_planes .precios-flex div {
+      width: 60%;
+      padding: 15px; } }
 
 @media screen and (max-width: 480px) {
   .precios_planes h1 {
