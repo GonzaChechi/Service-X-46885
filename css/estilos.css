@@ -288,11 +288,6 @@ footer {
   .ppal .video div {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "imag1 imag1 " "video video " "imag3 imag4 " "imag2 imag2"; }
-    .ppal .video div .ivideo {
-      width: 100%;
-      transition: 0s; }
-      .ppal .video div .ivideo:hover {
-        transform: scale(1); }
     .ppal .video div img {
       object-fit: fill; }
   .ppal .video p {

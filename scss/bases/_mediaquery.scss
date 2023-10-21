@@ -20,15 +20,6 @@
                     "imag3 imag4 "
                     "imag2 imag2";
 
-                .ivideo {
-                    width: 100%;
-                    transition: 0s;
-
-                    &:hover {
-                        transform: scale(1);
-                    }
-                }
-
                 img {
                     object-fit: fill;
                 }
