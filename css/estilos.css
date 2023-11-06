@@ -187,12 +187,12 @@ footer {
   .nosotros div img {
     margin-top: 20px;
     margin-bottom: 20px;
-    height: 400px;
-    width: 700px; }
+    height: 600px;
+    width: 100%; }
 
 .nosotros p {
   text-align: justify;
-  margin-bottom: 20px; }
+  margin: 0px 20px 20px 20px; }
 
 .precios_planes h1 {
   text-align: center;
