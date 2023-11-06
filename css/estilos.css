@@ -120,6 +120,7 @@ header .navbar {
     .ppal .video div .img4 {
       grid-area: imag4; }
   .ppal .video p {
+    margin: 10px 20px;
     text-align: justify;
     transition: 3s; }
 
